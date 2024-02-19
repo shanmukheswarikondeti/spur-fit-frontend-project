@@ -1,0 +1,43 @@
+.best-eq-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    
+
+}
+.best-eq-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    
+    
+
+}
+.best-eq-title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    padding-left:140px;
+
+}
+
+.best-eq-description1{
+    font-size: 18px;
+    line-height: 2;
+    color: #000;
+    width:20%;
+    
+    
+
+}
+.best-eq-description2{
+    font-size: 18px;
+    line-height: 2;
+    color: #000;
+    width:20%;
+    padding-right: 140px;
+
+}
+
+
