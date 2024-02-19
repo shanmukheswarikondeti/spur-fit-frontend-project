@@ -83,6 +83,7 @@ git commit -m "Initial commit"
 - Ensure the live website link is included in your GitHub repository, preferably in the README.md.
 
 - Refer to the below examples to add animations using GSAP:
+
 i.[https://bitworking.github.io/react-gsap/src-components-scroll-trigger](https://bitworking.github.io/react-gsap/src-components-scroll-trigger)
       
 ii.[https://stackblitz.com/edit/react-gsap-scroll-trigger?file=index.tsx](https://shields.io/)
@@ -97,29 +98,29 @@ v.[https://codepen.io/dev_loop/pen/zYvmRvq](https://shields.io/)
 **Sourcing assets like images and data for your project is a key step, especially when they're not provided. Here are some resources where you can find high-quality, free-to-use assets:** 
 
 
-- Images and Graphics
+**Images and Graphics**
 
  i.**1.GitHub** ([pexels.com](https://shields.io/)): Another great resource for free stock photos and videos, contributed by talented creators.
  
 ii.**Freepik** ([freepik.com](https://shields.io/)):  A platform for free vectors, stock photos, PSDs, and icons.
 
-- Data for Prototyping
+**Data for Prototyping**
 
 i.**Mockaroo**  ([mockaroo.com](https://shields.io/)):A useful tool for generating custom mock data in various formats, helpful for simulating real data in your project.
 
 ii.**JSONPlaceholder**  ([jsonplaceholder.typicode.com](https://shields.io/)): A free online REST API that you can use to fetch fake data for testing and prototyping.
 
-- Fonts
+**Fonts**
        
 i.**Google Fonts**  ([fonts.google.com](https://shields.io/)): Offers a wide array of free and easy-to-embed fonts.
     
-- Icons
+**Icons**
        
 i.**FontAwesome** ([fontawesome.com](https://shields.io/)): A popular icon set and toolkit with free and paid options.
 
 ii.**Ionicons** ([ionicons.com](https://shields.io/)): Open-sourced icons crafted for web, iOS, Android, and desktop apps.
 
-- UI Design Inspiration
+**UI Design Inspiration**
 
 i.**Dribbble** ([dribbble.com](https://shields.io/)): A community of designers sharing screenshots of their work, process, and projects.
         
