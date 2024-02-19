@@ -1,0 +1,36 @@
+.emotion-card{
+    width:280px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+.highlighted-emotion-card{
+    transform: rotate(-5deg);
+
+}
+.emotion-image{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+
+}
+.emotion-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+
+}
+.emotion-description{
+    font-size: 14px;
+    color:#5e5b5b;
+    line-height: 22px;
+
+}
+.highlighted-emotion-title{
+    color: #ffffff;
+}
+.highlighted-emotion-description{
+    color: #ffffff;
+
+}
