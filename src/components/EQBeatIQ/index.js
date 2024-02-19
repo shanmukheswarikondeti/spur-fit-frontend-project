@@ -71,10 +71,10 @@ return(
         <div className="eqbeatiq-container">
             <h1 className="eqbeatiq-title">EQ beats IQ</h1>
             <p className="eqbeatiq-description1">
-                People with high emotional<br/> intelligence (EQ) live more fulfilled<br/> lives. They tend to be happier and<br/> have healthier relationships.
+                People with high emotional intelligence (EQ) live more fulfilled lives. They tend to be happier and have healthier relationships.
             </p>
             <p className="eqbeatiq-description2">
-                They are more successful in their<br/> pursuits and make for inspiring<br/> leaders. According to science, they<br/> earn $29k a year.
+                They are more successful in their pursuits and make for inspiring leaders. According to science, they earn $29k a year.
             </p>
         </div>
         
