@@ -1,0 +1,20 @@
+.vacancies-container {
+    margin: 40px;
+    border-radius: 30px;
+    padding: 50px;
+  }
+  
+  .vacancies-title {
+    font-size: 47px;
+    color: #000000;
+    font-family: "Roboto";
+    font-weight: 600;
+  }
+  
+  .vacancies-list {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }

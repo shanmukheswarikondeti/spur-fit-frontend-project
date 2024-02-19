@@ -5,6 +5,8 @@ import SelfImprovementPage from '../SelfImprovementPage'
 import BestWithEQ from '../BestWithEQ'
 import RatingSkills from '../RatingSkills'
 import StartTestPage from '../StartTestPage'
+import WorkWithUs from '../WorkWithUs'
+import OpenVacancies from '../OpenVacancies'
 
 import './index.css'
 const MainContent=()=>(
@@ -16,6 +18,8 @@ const MainContent=()=>(
         <BestWithEQ/>  
         <RatingSkills/>
         <StartTestPage/>  
+        <WorkWithUs/>
+        <OpenVacancies/>
          
     </div>
 )
