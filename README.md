@@ -100,29 +100,29 @@ v.[https://codepen.io/dev_loop/pen/zYvmRvq](https://shields.io/)
 
 **Images and Graphics**
 
- i.**1.GitHub** ([pexels.com](https://shields.io/)): Another great resource for free stock photos and videos, contributed by talented creators.
+ i.GitHub ([pexels.com](https://shields.io/)): Another great resource for free stock photos and videos, contributed by talented creators.
  
-ii.**Freepik** ([freepik.com](https://shields.io/)):  A platform for free vectors, stock photos, PSDs, and icons.
+ii.Freepik ([freepik.com](https://shields.io/)):  A platform for free vectors, stock photos, PSDs, and icons.
 
 **Data for Prototyping**
 
-i.**Mockaroo**  ([mockaroo.com](https://shields.io/)):A useful tool for generating custom mock data in various formats, helpful for simulating real data in your project.
+i.Mockaroo ([mockaroo.com](https://shields.io/)):A useful tool for generating custom mock data in various formats, helpful for simulating real data in your project.
 
-ii.**JSONPlaceholder**  ([jsonplaceholder.typicode.com](https://shields.io/)): A free online REST API that you can use to fetch fake data for testing and prototyping.
+ii.JSONPlaceholder ([jsonplaceholder.typicode.com](https://shields.io/)): A free online REST API that you can use to fetch fake data for testing and prototyping.
 
 **Fonts**
        
-i.**Google Fonts**  ([fonts.google.com](https://shields.io/)): Offers a wide array of free and easy-to-embed fonts.
+i.Google Fonts ([fonts.google.com](https://shields.io/)): Offers a wide array of free and easy-to-embed fonts.
     
 **Icons**
        
-i.**FontAwesome** ([fontawesome.com](https://shields.io/)): A popular icon set and toolkit with free and paid options.
+i.FontAwesome ([fontawesome.com](https://shields.io/)): A popular icon set and toolkit with free and paid options.
 
-ii.**Ionicons** ([ionicons.com](https://shields.io/)): Open-sourced icons crafted for web, iOS, Android, and desktop apps.
+ii.Ionicons ([ionicons.com](https://shields.io/)): Open-sourced icons crafted for web, iOS, Android, and desktop apps.
 
 **UI Design Inspiration**
 
-i.**Dribbble** ([dribbble.com](https://shields.io/)): A community of designers sharing screenshots of their work, process, and projects.
+i.Dribbble ([dribbble.com](https://shields.io/)): A community of designers sharing screenshots of their work, process, and projects.
         
 
 
