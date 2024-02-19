@@ -1,6 +1,37 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+
 import './index.css'
 
-const StartTestPage=()=>(
+const StartTestPage=()=>{
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate the percentage scrolled
+      const scrollPercentage =
+        (window.scrollY /
+          (document.documentElement.scrollHeight - window.innerHeight)) *
+        100;
+
+      // Use GSAP to animate based on the scroll percentage
+      gsap.fromTo(
+        ".start-test-btn",
+        {
+          opacity: 0,
+        },
+        { opacity: 1, duration: 2 }
+      );
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup: remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
+  return(
     <div className="start-test-container">
         <p className="start-test-text">We take privacy seriously</p>
         <h1 className="start-test-title">Before you get started</h1>
@@ -12,4 +43,5 @@ const StartTestPage=()=>(
         <p className="test-duration">Take only 5 minutes</p>
     </div>
 );
+  }
 export default StartTestPage;

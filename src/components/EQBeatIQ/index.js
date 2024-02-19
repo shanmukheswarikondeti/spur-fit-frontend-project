@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+
 import EmotionCard from '../EmotionCard'
 
 import './index.css'
@@ -40,7 +43,30 @@ const emotionsList=[
         cardColor:"#fcf9c5",
     },
 ]
-const EQBeatIQ=()=>(
+const EQBeatIQ=()=>{
+    useEffect(() => {
+        const handleScroll = () => {
+          // Calculate the percentage scrolled
+          const scrollPercentage =
+            (window.scrollY /
+              (document.documentElement.scrollHeight - window.innerHeight)) *
+            100;   
+             // Use GSAP to animate based on the scroll percentage
+            gsap.to(".image", {
+            rotate: scrollPercentage >= 30 ? 0 : 360,
+          });
+        };
+    
+        // Attach the scroll event listener
+        window.addEventListener("scroll", handleScroll);
+    
+        // Cleanup: remove the event listener when the component is unmounted
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+    
+return(
     <div className="eq-page--container">
         <div className="eqbeatiq-container">
             <h1 className="eqbeatiq-title">EQ beats IQ</h1>
@@ -65,5 +91,6 @@ const EQBeatIQ=()=>(
         </div>
     </div>
 )
-
+                }
+                
 export default EQBeatIQ

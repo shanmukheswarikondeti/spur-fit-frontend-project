@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+
 import VacancyItem from "../VacancyItem";
 
 import './index.css';
@@ -26,7 +29,37 @@ const vacanciesList = [
   },
 ];
 
-const OpenVacancies = () => (
+const OpenVacancies = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate the percentage scrolled
+      const scrollPercentage =
+        (window.scrollX /
+          (document.documentElement.scrollHeight - window.innerHeight)) *
+        100;
+  
+      // Use GSAP to animate based on the scroll percentage
+      gsap.fromTo(
+        ".vacancies-title",
+        {
+          x: scrollPercentage >= 10 ? 0 : 20,
+          duration: 2,
+          
+        },
+        { x: scrollPercentage >= 30 ? 0 : 200, duration: 1, repeat: false }
+      );   
+    };
+  
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+  
+    // Cleanup: remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+return(
   <div className="vacancies-container">
     <h1 className="vacancies-title">Open vacancies</h1>
     <ul className="vacancies-list">
@@ -36,5 +69,6 @@ const OpenVacancies = () => (
     </ul>
   </div>
 );
+      }
 
 export default OpenVacancies;

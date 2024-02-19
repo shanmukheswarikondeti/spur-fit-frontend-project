@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+
 import appstore from './assets/appstore.png'
 
 import rating from './assets/rating.png'
@@ -6,7 +9,16 @@ import mobile from './assets/mobile.png'
 
 import './index.css'
 
-const HomePage=()=>(
+const HomePage=()=>{
+    useEffect(() => {
+        gsap.to(".mobile-image", {
+          rotate: 360,
+          duration: 1,
+        });
+        
+      }, []);
+      
+    return(
     <div className="home-page-container">
         <div className="home-content">
             <p className="ahead-app-text">Ahead app</p>
@@ -22,4 +34,5 @@ const HomePage=()=>(
         <img src={mobile} className="mobile-image" alt="mobile"/>
     </div>
 )
+    }
 export default HomePage

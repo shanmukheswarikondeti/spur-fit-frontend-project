@@ -1,4 +1,4 @@
-import { useRef,useEffect } from 'react';
+import {useEffect } from 'react';
 import {gsap} from "gsap";
 
 import WorkWithUsRightCardItem from "../WorkWithUsRightCardItem"
@@ -40,16 +40,57 @@ const workWithUsRightCardDetails=[
 ]
 
 const WorkWithUs=()=>{
-    const workWithTitleRef=useRef(null);
-    const workWithSideTitleRef=useRef(null);
+    
+
+    useEffect(() => {
+        const handleScroll = () => {
+          // Calculate the percentage scrolled
+          const scrollPercentage =
+            (window.scrollX /
+              (document.documentElement.scrollHeight - window.innerHeight)) *
+            100;
+    
+          // Use GSAP to animate based on the scroll percentage
+          gsap.fromTo(
+            ".work-with-us-title",
+            {
+              x: scrollPercentage >= 10 ? 0 : 20,
+              duration: 2,
+              
+            },
+            { x: scrollPercentage >= 30 ? 0 : 200, duration: 1, repeat: false }
+          );
+    
+          gsap.fromTo(
+            ".work-with-us-side-title",
+            {
+              x: scrollPercentage >= 30 ? 0 : 300,
+              duration: 2,
+            },
+            { x: scrollPercentage >= 30 ? 0 : 100, duration: 1, repeat: false }
+          );
+
+          gsap.to(".about-logo", {
+            rotate: scrollPercentage >= 30 ? 0 : 360,
+          });
+        };
+    
+        // Attach the scroll event listener
+        window.addEventListener("scroll", handleScroll);
+    
+        // Cleanup: remove the event listener when the component is unmounted
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
 
     return(
         <div className="work-with-us-container">
             <div className="work-with-us-header">
-               <h1 className="work-with-us-title" ref={workWithTitleRef}>
+               <h1 className="work-with-us-title">
                    Work with us
                </h1>
-               <h1 className="work-with-us-side-title" ref={workWithSideTitleRef}>ahead</h1>
+               <h1 className="work-with-us-side-title">ahead</h1>
             </div>
 
             <div className="work-with-us-cards">

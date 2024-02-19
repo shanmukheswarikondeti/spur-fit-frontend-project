@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+
 import './index.css'
 
 const selfImprovementList=[
@@ -27,15 +30,41 @@ const selfImprovementList=[
         description:"We made sure your energy from all the content you consume does not fizzle out.",
     },
 ]
-const SelfImprovementPage=()=>(
+const SelfImprovementPage=()=>{
+    useEffect(() => {
+        const handleScroll = () => {
+          // Calculate the percentage scrolled
+          const scrollPercentage =
+            (window.scrollY /
+              (document.documentElement.scrollHeight - window.innerHeight)) *
+            100;   
+             // Use GSAP to animate based on the scroll percentage
+            gsap.to(".self-image", {
+            rotate: scrollPercentage >= 30 ? 0 : 180,
+          });
+        };
+    
+        // Attach the scroll event listener
+        window.addEventListener("scroll", handleScroll);
+    
+        // Cleanup: remove the event listener when the component is unmounted
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+    
+return(
     <div className="self-improvement-container">
         <div className="self-improvement-header">
             <p className="self-improvement-top-title">
                 Wrong with self-improvement & how we're fixed it.
             </p>
-            <h1 className="self-improvement-title">
-                Self-improvement.Ugh.
-            </h1>
+            <div className="self-container">
+                <h1 className="self-improvement-title">
+                    Self-improvement.Ugh.
+                </h1>
+                <img src="https://res.cloudinary.com/dlju0quch/image/upload/v1708332220/Screenshot_2024-02-19_141249_qqpnv3.png" className="self-image" alt="self logo"/>
+            </div>
         </div>
         <div className="self-improvement-timeline">
             {selfImprovementList.map((item)=>(
@@ -53,4 +82,5 @@ const SelfImprovementPage=()=>(
 
 
 );
+            };
 export default SelfImprovementPage;
