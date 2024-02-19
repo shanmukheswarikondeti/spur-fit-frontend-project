@@ -1,0 +1,57 @@
+.nav-conatainer{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    min-height: 10vh;
+    box-shadow: 0px 4px 16px 0px #efeded;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index:1000;
+    
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+
+}
+.website-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.nav-items{
+    display: flex;
+    list-style-type:none;
+    text-decoration:none;
+    font-family:"Roboto";
+    color:#000000;
+}
+.nav-list-item{
+    margin-right: 30px;
+}
+
+
+
+.download-app-button{
+    border:none;
+    border-radius: 20px;
+    padding:20px;
+    background-color: #000000;
+    color:#ffffff;
+    font-family: "Roboto";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    cursor:pointer;
+    outline:none;
+
+
+}
